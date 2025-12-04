@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "hook-auto-lint",
+  "version": "1.0.0",
+  "description": "Automatically run linter after file edits and provide feedback",
+  "type": "hook",
+  "author": {
+    "name": "Claude Code Community",
+    "github": "claude-code-community"
+  },
+  "repository": "https://github.com/claude-code-community/hooks",
+  "license": "MIT",
+  "tags": ["linting", "eslint", "auto-fix", "code-quality"],
+  "install": {
+    "config": {
+      "hooks": {
+        "PostToolUse": [
+          {
+            "matcher": "Edit|Write",
+            "hooks": [
+              {
+                "type": "command",
+                "command": "npm run lint -- --fix $CLAUDE_FILE_PATH 2>&1 || true"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "hook": {
+    "event": "PostToolUse",
+    "matcher": "Edit|Write"
+  }
+}

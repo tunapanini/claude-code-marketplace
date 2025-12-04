@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "hook-auto-test",
+  "version": "1.0.0",
+  "description": "Automatically run related tests after code changes",
+  "type": "hook",
+  "author": {
+    "name": "Claude Code Community",
+    "github": "claude-code-community"
+  },
+  "repository": "https://github.com/claude-code-community/hooks",
+  "license": "MIT",
+  "tags": ["testing", "jest", "vitest", "auto-test", "tdd"],
+  "install": {
+    "config": {
+      "hooks": {
+        "PostToolUse": [
+          {
+            "matcher": "Edit|Write",
+            "hooks": [
+              {
+                "type": "command",
+                "command": "npm test -- --findRelatedTests $CLAUDE_FILE_PATH --passWithNoTests 2>&1 || true"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "hook": {
+    "event": "PostToolUse",
+    "matcher": "Edit|Write"
+  }
+}

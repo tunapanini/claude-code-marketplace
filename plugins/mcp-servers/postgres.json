@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "mcp-postgres",
+  "version": "1.0.0",
+  "description": "PostgreSQL database integration - query, inspect schema, and manage databases",
+  "type": "mcp-server",
+  "author": {
+    "name": "Anthropic",
+    "github": "anthropics"
+  },
+  "repository": "https://github.com/anthropics/claude-code",
+  "license": "MIT",
+  "tags": ["database", "postgresql", "sql", "official"],
+  "install": {
+    "npm": "@anthropic-ai/mcp-server-postgres",
+    "config": {
+      "mcpServers": {
+        "postgres": {
+          "command": "npx",
+          "args": ["-y", "@anthropic-ai/mcp-server-postgres", "${DATABASE_URL}"]
+        }
+      }
+    }
+  },
+  "requirements": {
+    "node": ">=18.0.0"
+  },
+  "mcp": {
+    "tools": ["query", "list_tables", "describe_table"],
+    "resources": ["postgres://tables", "postgres://schema"]
+  }
+}

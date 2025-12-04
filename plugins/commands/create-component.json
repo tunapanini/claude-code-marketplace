@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "command-create-component",
+  "version": "1.0.0",
+  "description": "Scaffold React/Vue/Svelte components with tests and stories",
+  "type": "command",
+  "author": {
+    "name": "Claude Code Community",
+    "github": "claude-code-community"
+  },
+  "repository": "https://github.com/claude-code-community/commands",
+  "license": "MIT",
+  "tags": ["react", "vue", "svelte", "component", "scaffold", "testing"],
+  "install": {
+    "command": "curl -o ~/.claude/commands/create-component.md https://raw.githubusercontent.com/claude-code-community/commands/main/create-component.md"
+  },
+  "command": {
+    "name": "create-component",
+    "arguments": [
+      {
+        "name": "name",
+        "required": true,
+        "description": "Component name in PascalCase"
+      },
+      {
+        "name": "framework",
+        "required": false,
+        "description": "Framework: react, vue, svelte (auto-detected if not specified)"
+      }
+    ]
+  }
+}

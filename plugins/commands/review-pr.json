@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "command-review-pr",
+  "version": "1.0.0",
+  "description": "Comprehensive pull request review command with code quality checks and suggestions",
+  "type": "command",
+  "author": {
+    "name": "Claude Code Community",
+    "github": "claude-code-community"
+  },
+  "repository": "https://github.com/claude-code-community/commands",
+  "license": "MIT",
+  "tags": ["code-review", "pull-request", "github", "quality"],
+  "install": {
+    "command": "curl -o ~/.claude/commands/review-pr.md https://raw.githubusercontent.com/claude-code-community/commands/main/review-pr.md"
+  },
+  "command": {
+    "name": "review-pr",
+    "arguments": [
+      {
+        "name": "pr_number",
+        "required": true,
+        "description": "Pull request number to review"
+      },
+      {
+        "name": "focus",
+        "required": false,
+        "description": "Focus area: security, performance, style, or all"
+      }
+    ]
+  }
+}

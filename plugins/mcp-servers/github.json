@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "mcp-github",
+  "version": "1.0.0",
+  "description": "GitHub API integration for Claude Code - manage repos, issues, PRs, and more",
+  "type": "mcp-server",
+  "author": {
+    "name": "Anthropic",
+    "github": "anthropics"
+  },
+  "repository": "https://github.com/anthropics/claude-code",
+  "license": "MIT",
+  "tags": ["github", "git", "repository", "issues", "pull-requests", "official"],
+  "install": {
+    "npm": "@anthropic-ai/mcp-server-github",
+    "config": {
+      "mcpServers": {
+        "github": {
+          "command": "npx",
+          "args": ["-y", "@anthropic-ai/mcp-server-github"],
+          "env": {
+            "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": {
+    "node": ">=18.0.0"
+  },
+  "mcp": {
+    "tools": [
+      "create_repository",
+      "fork_repository",
+      "create_branch",
+      "create_pull_request",
+      "create_issue",
+      "get_file_contents",
+      "push_files",
+      "search_repositories",
+      "search_code",
+      "search_issues"
+    ],
+    "resources": ["repo://", "issue://", "pr://"]
+  }
+}

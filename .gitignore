@@ -1,0 +1,5 @@
+node_modules/
+registry.json
+.DS_Store
+*.log
+_site/
