@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "github": {
+      "transport": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}
