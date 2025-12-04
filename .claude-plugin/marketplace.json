@@ -15,7 +15,7 @@
       "source": "./commands/review-pr",
       "description": "Comprehensive pull request code review",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["code-review", "pull-request", "github"]
     },
     {
@@ -23,7 +23,7 @@
       "source": "./commands/create-component",
       "description": "Scaffold React/Vue/Svelte components with tests",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["react", "vue", "component", "scaffold"]
     },
     {
@@ -31,7 +31,7 @@
       "source": "./commands/git-conventional",
       "description": "Generate conventional commit messages",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["git", "commit", "conventional-commits"]
     },
     {
@@ -39,7 +39,7 @@
       "source": "./commands/explain-codebase",
       "description": "Generate codebase documentation and architecture overview",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["documentation", "architecture", "onboarding"]
     },
     {
@@ -47,7 +47,7 @@
       "source": "./commands/linear-find-issues",
       "description": "Find and prioritize next Linear issues",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["linear", "project-management", "issues"]
     },
     {
@@ -55,7 +55,7 @@
       "source": "./commands/organize-permissions",
       "description": "Analyze and organize Claude Code permissions",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["permissions", "settings", "security"]
     },
     {
@@ -63,7 +63,7 @@
       "source": "./commands/commit-and-pr",
       "description": "Automated workflow: commit, test, and create PR",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["git", "github", "workflow", "automation"]
     },
     {
@@ -71,7 +71,7 @@
       "source": "./commands/commit-and-push",
       "description": "Automated workflow: commit, test, and push",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["git", "workflow", "automation"]
     },
     {
@@ -79,7 +79,7 @@
       "source": "./hooks/auto-lint",
       "description": "Auto-lint after file edits",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["linting", "eslint", "auto-fix"]
     },
     {
@@ -87,7 +87,7 @@
       "source": "./hooks/auto-test",
       "description": "Run related tests after code changes",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["testing", "jest", "vitest"]
     },
     {
@@ -95,7 +95,7 @@
       "source": "./hooks/notify-slack",
       "description": "Send Slack notifications on task completion",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["slack", "notifications", "alerts"]
     },
     {
@@ -103,7 +103,7 @@
       "source": "./hooks/security-scan",
       "description": "Block potentially dangerous bash commands",
       "version": "1.0.0",
-      "author": "Claude Code Community",
+      "author": { "name": "Claude Code Community" },
       "keywords": ["security", "safety", "guard"]
     },
     {
@@ -111,7 +111,7 @@
       "source": "./agents/backend-architect",
       "description": "Design reliable backend systems with data integrity focus",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["backend", "api", "database", "architecture"]
     },
     {
@@ -119,7 +119,7 @@
       "source": "./agents/frontend-architect",
       "description": "Create accessible, performant user interfaces",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["frontend", "accessibility", "performance", "ui"]
     },
     {
@@ -127,7 +127,7 @@
       "source": "./agents/security-engineer",
       "description": "Identify security vulnerabilities and ensure compliance",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["security", "owasp", "vulnerability", "audit"]
     },
     {
@@ -135,7 +135,7 @@
       "source": "./agents/refactoring-expert",
       "description": "Improve code quality through systematic refactoring",
       "version": "1.0.0",
-      "author": "tunapanini",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["refactoring", "clean-code", "solid"]
     }
   ]
