@@ -12,31 +12,31 @@
   "plugins": [
     {
       "name": "tupa-frontend",
-      "source": "./plugins/frontend",
+      "source": "./plugins/tupa-frontend",
       "description": "Frontend development tools: component scaffolding",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["react", "vue", "svelte", "component", "scaffold", "frontend"]
     },
     {
-      "name": "tupa-claude-tools",
-      "source": "./plugins/claude-tools",
+      "name": "tupa-claude",
+      "source": "./plugins/tupa-claude",
       "description": "Claude Code utilities: codebase analysis and settings management",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["documentation", "architecture", "permissions", "settings", "claude-code"]
     },
     {
-      "name": "tupa-git-flow",
-      "source": "./plugins/git-flow",
+      "name": "tupa-git",
+      "source": "./plugins/tupa-git",
       "description": "Git workflow automation: conventional commits, push, and PR",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["git", "github", "workflow", "automation", "pull-request", "conventional-commits"]
     },
     {
-      "name": "tupa-auto-quality",
-      "source": "./plugins/auto-quality",
+      "name": "tupa-quality",
+      "source": "./plugins/tupa-quality",
       "description": "Auto-lint and run tests after file edits",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -44,7 +44,7 @@
     },
     {
       "name": "tupa-makers",
-      "source": "./plugins/makers",
+      "source": "./plugins/tupa-makers",
       "description": "Specialized AI agents for frontend, backend, security, and refactoring",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
