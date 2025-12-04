@@ -83,36 +83,12 @@
       "keywords": ["security", "safety", "guard"]
     },
     {
-      "name": "agent-backend-architect",
-      "source": "./plugins/backend-architect",
-      "description": "Design reliable backend systems with data integrity focus",
+      "name": "agent-makers",
+      "source": "./plugins/makers",
+      "description": "Specialized AI agents for frontend, backend, security, and refactoring",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["backend", "api", "database", "architecture"]
-    },
-    {
-      "name": "agent-frontend-architect",
-      "source": "./plugins/frontend-architect",
-      "description": "Create accessible, performant user interfaces",
-      "version": "1.0.0",
-      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["frontend", "accessibility", "performance", "ui"]
-    },
-    {
-      "name": "agent-security-engineer",
-      "source": "./plugins/security-engineer",
-      "description": "Identify security vulnerabilities and ensure compliance",
-      "version": "1.0.0",
-      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["security", "owasp", "vulnerability", "audit"]
-    },
-    {
-      "name": "agent-refactoring-expert",
-      "source": "./plugins/refactoring-expert",
-      "description": "Improve code quality through systematic refactoring",
-      "version": "1.0.0",
-      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["refactoring", "clean-code", "solid"]
+      "keywords": ["frontend", "backend", "security", "refactoring", "architecture", "agents"]
     }
   ]
 }
