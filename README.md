@@ -1,6 +1,6 @@
 # Claude Code Plugins Marketplace
 
-Community-driven marketplace for Claude Code plugins, commands, and hooks.
+Community-driven marketplace for Claude Code plugins, commands, hooks, and agents.
 
 ## Plugin Types
 
@@ -12,6 +12,9 @@ Custom commands that can be invoked with `/command-name` in Claude Code.
 
 ### Hooks
 Event-driven scripts that run automatically in response to Claude Code actions.
+
+### Agents
+Specialized persona prompts that guide Claude Code's behavior for specific tasks.
 
 ## Installation
 
@@ -82,6 +85,10 @@ Example:
 | [create-component](plugins/commands/create-component.json) | Scaffold components | `/create-component <name>` |
 | [git-conventional](plugins/commands/git-conventional.json) | Conventional commits | `/commit` |
 | [explain-codebase](plugins/commands/explain-codebase.json) | Codebase documentation | `/explain` |
+| [linear-find-issues](plugins/commands/linear-find-issues.json) | Find next Linear issues | `/linear:find-next-issues` |
+| [organize-permissions](plugins/commands/organize-permissions.json) | Organize Claude permissions | `/tupa:organize-permissions` |
+| [commit-and-pr](plugins/commands/commit-and-pr.json) | Commit, test, and create PR | `/tupa:commit-and-pr` |
+| [commit-and-push](plugins/commands/commit-and-push.json) | Commit, test, and push | `/tupa:commit-and-push` |
 
 ### Hooks
 | Plugin | Description | Event |
@@ -90,6 +97,14 @@ Example:
 | [auto-test](plugins/hooks/auto-test.json) | Run related tests | PostToolUse |
 | [notify-slack](plugins/hooks/notify-slack.json) | Slack notifications | Stop |
 | [security-scan](plugins/hooks/security-scan.json) | Block dangerous commands | PreToolUse |
+
+### Agents
+| Plugin | Description | Category |
+|--------|-------------|----------|
+| [backend-architect](plugins/agents/backend-architect.json) | Backend system design | engineering |
+| [frontend-architect](plugins/agents/frontend-architect.json) | Accessible, performant UIs | engineering |
+| [security-engineer](plugins/agents/security-engineer.json) | Security vulnerability analysis | quality |
+| [refactoring-expert](plugins/agents/refactoring-expert.json) | Code quality improvement | quality |
 
 ## Contributing
 
@@ -100,6 +115,7 @@ Example:
    - `plugins/mcp-servers/` for MCP servers
    - `plugins/commands/` for slash commands
    - `plugins/hooks/` for hooks
+   - `plugins/agents/` for agent personas
 3. Follow the schema in `schemas/plugin.schema.json`
 4. Submit a pull request
 
@@ -111,14 +127,14 @@ Required fields:
 - `name`: Unique plugin identifier (lowercase, hyphens only)
 - `version`: Semantic version (e.g., "1.0.0")
 - `description`: Brief description
-- `type`: One of "mcp-server", "command", or "hook"
+- `type`: One of "mcp-server", "command", "hook", or "agent"
 - `author`: Object with at least `name` field
 
 ### Validation
 
 ```bash
 # Validate a plugin against the schema
-npm run validate plugins/mcp-servers/your-plugin.json
+pnpm run validate plugins/mcp-servers/your-plugin.json
 ```
 
 ## Registry API

@@ -8,7 +8,7 @@ const OUTPUT_FILE = path.join(__dirname, '..', 'registry.json');
 
 function readPlugins(dir) {
   const plugins = [];
-  const types = ['mcp-servers', 'commands', 'hooks'];
+  const types = ['mcp-servers', 'commands', 'hooks', 'agents'];
 
   for (const type of types) {
     const typeDir = path.join(dir, type);
@@ -48,6 +48,7 @@ function buildRegistry() {
   console.log(`  - MCP Servers: ${plugins.filter(p => p.type === 'mcp-server').length}`);
   console.log(`  - Commands: ${plugins.filter(p => p.type === 'command').length}`);
   console.log(`  - Hooks: ${plugins.filter(p => p.type === 'hook').length}`);
+  console.log(`  - Agents: ${plugins.filter(p => p.type === 'agent').length}`);
 }
 
 buildRegistry();

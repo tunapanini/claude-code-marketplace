@@ -33,7 +33,7 @@ function validate(filePath) {
 
 function validateAll() {
   const pluginsDir = path.join(__dirname, '..', 'plugins');
-  const types = ['mcp-servers', 'commands', 'hooks'];
+  const types = ['mcp-servers', 'commands', 'hooks', 'agents'];
   let hasErrors = false;
 
   for (const type of types) {

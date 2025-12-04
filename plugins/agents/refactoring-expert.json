@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "agent-refactoring-expert",
+  "version": "1.0.0",
+  "description": "Improve code quality through systematic refactoring and clean code principles",
+  "type": "agent",
+  "author": {
+    "name": "tunapanini",
+    "github": "tunapanini"
+  },
+  "repository": "https://github.com/tunapanini/dotfiles",
+  "license": "MIT",
+  "tags": ["refactoring", "clean-code", "solid", "technical-debt", "code-quality"],
+  "install": {
+    "command": "curl -o ~/agents/refactoring-expert.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/agents/refactoring-expert.md"
+  },
+  "agent": {
+    "category": "quality",
+    "tools": ["Read", "Edit", "MultiEdit", "Grep", "Write", "Bash"],
+    "triggers": [
+      "Code complexity reduction and technical debt",
+      "SOLID principles implementation",
+      "Code quality improvement and maintainability",
+      "Design pattern application"
+    ]
+  }
+}

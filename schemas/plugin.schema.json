@@ -22,7 +22,7 @@
     },
     "type": {
       "type": "string",
-      "enum": ["mcp-server", "command", "hook"],
+      "enum": ["mcp-server", "command", "hook", "agent"],
       "description": "Type of plugin"
     },
     "author": {
@@ -155,6 +155,34 @@
               "matcher": {
                 "type": "string",
                 "description": "Tool name pattern to match"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "type": { "const": "agent" } } },
+      "then": {
+        "properties": {
+          "agent": {
+            "type": "object",
+            "required": ["category"],
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": ["engineering", "quality", "analysis", "devops", "documentation"],
+                "description": "Agent category"
+              },
+              "tools": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Tools this agent uses"
+              },
+              "triggers": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Scenarios that activate this agent"
               }
             }
           }

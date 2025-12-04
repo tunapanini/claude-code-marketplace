@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "name": "command-linear-find-issues",
+  "version": "1.0.0",
+  "description": "Find and prioritize next Linear issues based on status and priority",
+  "type": "command",
+  "author": {
+    "name": "tunapanini",
+    "github": "tunapanini"
+  },
+  "repository": "https://github.com/tunapanini/dotfiles",
+  "license": "MIT",
+  "tags": ["linear", "project-management", "issues", "prioritization", "workflow"],
+  "install": {
+    "command": "mkdir -p ~/.claude/commands/linear && curl -o ~/.claude/commands/linear/find-next-issues.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/.claude/commands/linear/find-next-issues.md"
+  },
+  "command": {
+    "name": "linear:find-next-issues",
+    "arguments": [
+      {
+        "name": "project-name",
+        "required": false,
+        "description": "Filter by specific project. Auto-detected from current directory if omitted"
+      }
+    ]
+  }
+}
