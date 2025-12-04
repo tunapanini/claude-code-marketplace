@@ -1,5 +1,5 @@
 {
-  "name": "hook-auto-lint",
+  "name": "auto-lint",
   "version": "1.0.0",
   "description": "Automatically run linter after file edits and provide feedback",
   "author": {

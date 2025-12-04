@@ -1,5 +1,5 @@
 {
-  "name": "command-explain-codebase",
+  "name": "explain-codebase",
   "version": "1.0.0",
   "description": "Generate comprehensive codebase documentation and architecture overview",
   "author": {

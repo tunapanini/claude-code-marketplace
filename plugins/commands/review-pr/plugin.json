@@ -1,5 +1,5 @@
 {
-  "name": "command-review-pr",
+  "name": "review-pr",
   "version": "1.0.0",
   "description": "Comprehensive pull request review with code quality checks and suggestions",
   "author": {

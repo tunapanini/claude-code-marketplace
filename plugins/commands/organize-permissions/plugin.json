@@ -1,5 +1,5 @@
 {
-  "name": "command-organize-permissions",
+  "name": "organize-permissions",
   "version": "1.0.0",
   "description": "Analyze and organize Claude Code permissions from local to global settings",
   "author": {

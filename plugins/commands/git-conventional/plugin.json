@@ -1,5 +1,5 @@
 {
-  "name": "command-git-conventional",
+  "name": "git-conventional",
   "version": "1.0.0",
   "description": "Generate conventional commit messages based on staged changes",
   "author": {

@@ -1,5 +1,5 @@
 {
-  "name": "command-commit-and-push",
+  "name": "commit-and-push",
   "version": "1.0.0",
   "description": "Automated workflow: commit changes, run tests, and push to remote",
   "author": {

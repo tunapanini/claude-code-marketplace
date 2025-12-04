@@ -1,5 +1,5 @@
 {
-  "name": "command-create-component",
+  "name": "create-component",
   "version": "1.0.0",
   "description": "Scaffold React/Vue/Svelte components with tests and stories",
   "author": {

@@ -1,5 +1,5 @@
 {
-  "name": "command-linear-find-issues",
+  "name": "linear-find-issues",
   "version": "1.0.0",
   "description": "Find and prioritize next Linear issues based on status and priority",
   "author": {

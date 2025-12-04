@@ -1,5 +1,5 @@
 {
-  "name": "command-commit-and-pr",
+  "name": "commit-and-pr",
   "version": "1.0.0",
   "description": "Automated workflow: commit changes, run tests, push, and create draft PR",
   "author": {

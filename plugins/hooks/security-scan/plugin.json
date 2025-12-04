@@ -1,5 +1,5 @@
 {
-  "name": "hook-security-scan",
+  "name": "security-scan",
   "version": "1.0.0",
   "description": "Block potentially dangerous bash commands before execution",
   "author": {
