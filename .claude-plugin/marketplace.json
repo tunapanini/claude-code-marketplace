@@ -59,20 +59,12 @@
       "keywords": ["permissions", "settings", "security"]
     },
     {
-      "name": "command-commit-and-pr",
-      "source": "./plugins/commit-and-pr",
-      "description": "Automated workflow: commit, test, and create PR",
+      "name": "command-git-flow",
+      "source": "./plugins/git-flow",
+      "description": "Git workflow automation: commit, test, push, and PR",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["git", "github", "workflow", "automation"]
-    },
-    {
-      "name": "command-commit-and-push",
-      "source": "./plugins/commit-and-push",
-      "description": "Automated workflow: commit, test, and push",
-      "version": "1.0.0",
-      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["git", "workflow", "automation"]
+      "keywords": ["git", "github", "workflow", "automation", "pull-request"]
     },
     {
       "name": "hook-auto-quality",
