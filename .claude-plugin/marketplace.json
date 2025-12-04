@@ -75,20 +75,12 @@
       "keywords": ["git", "workflow", "automation"]
     },
     {
-      "name": "hook-auto-lint",
-      "source": "./plugins/auto-lint",
-      "description": "Auto-lint after file edits",
+      "name": "hook-auto-quality",
+      "source": "./plugins/auto-quality",
+      "description": "Auto-lint and run tests after file edits",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
-      "keywords": ["linting", "eslint", "auto-fix"]
-    },
-    {
-      "name": "hook-auto-test",
-      "source": "./plugins/auto-test",
-      "description": "Run related tests after code changes",
-      "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["testing", "jest", "vitest"]
+      "keywords": ["linting", "testing", "eslint", "jest", "vitest", "auto-fix", "quality"]
     },
     {
       "name": "hook-notify-slack",

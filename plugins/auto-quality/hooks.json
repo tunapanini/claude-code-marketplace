@@ -6,6 +6,10 @@
         {
           "type": "command",
           "command": "npm run lint -- --fix $CLAUDE_FILE_PATH 2>&1 || true"
+        },
+        {
+          "type": "command",
+          "command": "npm test -- --findRelatedTests $CLAUDE_FILE_PATH --passWithNoTests 2>&1 || true"
         }
       ]
     }
