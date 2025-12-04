@@ -1,0 +1,13 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "npm run lint -- --fix $CLAUDE_FILE_PATH 2>&1 || true"
+        }
+      ]
+    }
+  ]
+}

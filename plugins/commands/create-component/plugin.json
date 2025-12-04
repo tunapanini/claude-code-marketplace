@@ -1,0 +1,11 @@
+{
+  "name": "command-create-component",
+  "version": "1.0.0",
+  "description": "Scaffold React/Vue/Svelte components with tests and stories",
+  "author": {
+    "name": "Claude Code Community"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["react", "vue", "svelte", "component", "scaffold", "testing"]
+}

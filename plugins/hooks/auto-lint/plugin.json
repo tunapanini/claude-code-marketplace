@@ -1,0 +1,12 @@
+{
+  "name": "hook-auto-lint",
+  "version": "1.0.0",
+  "description": "Automatically run linter after file edits and provide feedback",
+  "author": {
+    "name": "Claude Code Community"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["linting", "eslint", "auto-fix", "code-quality"],
+  "hooks": "./hooks.json"
+}

@@ -1,0 +1,13 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "Write|Edit",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "npm test -- --findRelatedTests $CLAUDE_FILE_PATH --passWithNoTests 2>&1 || true"
+        }
+      ]
+    }
+  ]
+}

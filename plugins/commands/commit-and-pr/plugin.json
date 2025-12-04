@@ -1,0 +1,12 @@
+{
+  "name": "command-commit-and-pr",
+  "version": "1.0.0",
+  "description": "Automated workflow: commit changes, run tests, push, and create draft PR",
+  "author": {
+    "name": "tunapanini",
+    "url": "https://github.com/tunapanini"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["git", "github", "workflow", "automation", "pull-request", "ci"]
+}

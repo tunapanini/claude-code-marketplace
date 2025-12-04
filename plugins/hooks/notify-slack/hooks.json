@@ -1,0 +1,12 @@
+{
+  "Stop": [
+    {
+      "hooks": [
+        {
+          "type": "command",
+          "command": "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"Claude Code task completed!\"}' $SLACK_WEBHOOK_URL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "name": "claude-code-marketplace",
+  "owner": {
+    "name": "tunapanini",
+    "url": "https://github.com/tunapanini"
+  },
+  "metadata": {
+    "description": "Community-driven marketplace for Claude Code plugins - commands, hooks, and agents",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "command-review-pr",
+      "source": "./commands/review-pr",
+      "description": "Comprehensive pull request code review",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["code-review", "pull-request", "github"]
+    },
+    {
+      "name": "command-create-component",
+      "source": "./commands/create-component",
+      "description": "Scaffold React/Vue/Svelte components with tests",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["react", "vue", "component", "scaffold"]
+    },
+    {
+      "name": "command-git-conventional",
+      "source": "./commands/git-conventional",
+      "description": "Generate conventional commit messages",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["git", "commit", "conventional-commits"]
+    },
+    {
+      "name": "command-explain-codebase",
+      "source": "./commands/explain-codebase",
+      "description": "Generate codebase documentation and architecture overview",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["documentation", "architecture", "onboarding"]
+    },
+    {
+      "name": "command-linear-find-issues",
+      "source": "./commands/linear-find-issues",
+      "description": "Find and prioritize next Linear issues",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["linear", "project-management", "issues"]
+    },
+    {
+      "name": "command-organize-permissions",
+      "source": "./commands/organize-permissions",
+      "description": "Analyze and organize Claude Code permissions",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["permissions", "settings", "security"]
+    },
+    {
+      "name": "command-commit-and-pr",
+      "source": "./commands/commit-and-pr",
+      "description": "Automated workflow: commit, test, and create PR",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["git", "github", "workflow", "automation"]
+    },
+    {
+      "name": "command-commit-and-push",
+      "source": "./commands/commit-and-push",
+      "description": "Automated workflow: commit, test, and push",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["git", "workflow", "automation"]
+    },
+    {
+      "name": "hook-auto-lint",
+      "source": "./hooks/auto-lint",
+      "description": "Auto-lint after file edits",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["linting", "eslint", "auto-fix"]
+    },
+    {
+      "name": "hook-auto-test",
+      "source": "./hooks/auto-test",
+      "description": "Run related tests after code changes",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["testing", "jest", "vitest"]
+    },
+    {
+      "name": "hook-notify-slack",
+      "source": "./hooks/notify-slack",
+      "description": "Send Slack notifications on task completion",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["slack", "notifications", "alerts"]
+    },
+    {
+      "name": "hook-security-scan",
+      "source": "./hooks/security-scan",
+      "description": "Block potentially dangerous bash commands",
+      "version": "1.0.0",
+      "author": "Claude Code Community",
+      "keywords": ["security", "safety", "guard"]
+    },
+    {
+      "name": "agent-backend-architect",
+      "source": "./agents/backend-architect",
+      "description": "Design reliable backend systems with data integrity focus",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["backend", "api", "database", "architecture"]
+    },
+    {
+      "name": "agent-frontend-architect",
+      "source": "./agents/frontend-architect",
+      "description": "Create accessible, performant user interfaces",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["frontend", "accessibility", "performance", "ui"]
+    },
+    {
+      "name": "agent-security-engineer",
+      "source": "./agents/security-engineer",
+      "description": "Identify security vulnerabilities and ensure compliance",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["security", "owasp", "vulnerability", "audit"]
+    },
+    {
+      "name": "agent-refactoring-expert",
+      "source": "./agents/refactoring-expert",
+      "description": "Improve code quality through systematic refactoring",
+      "version": "1.0.0",
+      "author": "tunapanini",
+      "keywords": ["refactoring", "clean-code", "solid"]
+    }
+  ]
+}

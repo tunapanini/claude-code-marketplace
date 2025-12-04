@@ -1,0 +1,12 @@
+{
+  "name": "agent-backend-architect",
+  "version": "1.0.0",
+  "description": "Design reliable backend systems with focus on data integrity, security, and fault tolerance",
+  "author": {
+    "name": "tunapanini",
+    "url": "https://github.com/tunapanini"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["backend", "api", "database", "security", "architecture", "reliability"]
+}

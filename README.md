@@ -1,154 +1,125 @@
 # Claude Code Plugins Marketplace
 
-Community-driven marketplace for Claude Code plugins, commands, hooks, and agents.
-
-## Plugin Types
-
-### MCP Servers
-Model Context Protocol servers that extend Claude Code's capabilities with new tools and integrations.
-
-### Slash Commands
-Custom commands that can be invoked with `/command-name` in Claude Code.
-
-### Hooks
-Event-driven scripts that run automatically in response to Claude Code actions.
-
-### Agents
-Specialized persona prompts that guide Claude Code's behavior for specific tasks.
+Community-driven marketplace for Claude Code plugins - commands, hooks, and agents.
 
 ## Installation
 
-### Installing MCP Servers
+### Add Marketplace
 
-1. Find the plugin in `plugins/mcp-servers/`
-2. Copy the configuration from the `install.config` field
-3. Add it to your `~/.claude/settings.json` or Claude Desktop config
-
-Example:
 ```bash
-# View plugin details
-cat plugins/mcp-servers/github.json
-
-# The install.config shows what to add to your settings
+# GitHub 저장소 추가
+/plugin marketplace add tunapanini/claude-code-marketplace
 ```
 
-### Installing Slash Commands
+### Install Plugin
 
-1. Find the command in `plugins/commands/`
-2. Run the install command or manually copy the file
-
-Example:
 ```bash
-# Install review-pr command
-curl -o ~/.claude/commands/review-pr.md https://raw.githubusercontent.com/claude-code-community/commands/main/review-pr.md
+# 마켓플레이스에서 플러그인 설치
+/plugin install command-commit-and-pr@claude-code-marketplace
+/plugin install hook-auto-lint@claude-code-marketplace
+/plugin install agent-backend-architect@claude-code-marketplace
 ```
 
-### Installing Hooks
+### Manage Marketplace
 
-1. Find the hook in `plugins/hooks/`
-2. Add the hook configuration to your `~/.claude/settings.json`
+```bash
+# 마켓플레이스 목록
+/plugin marketplace list
 
-Example:
-```json
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Edit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npm run lint -- --fix $CLAUDE_FILE_PATH"
-          }
-        ]
-      }
-    ]
-  }
-}
+# 메타데이터 새로고침
+/plugin marketplace update claude-code-marketplace
+
+# 마켓플레이스 제거
+/plugin marketplace remove claude-code-marketplace
 ```
 
 ## Available Plugins
 
-### MCP Servers
-| Plugin | Description | Tags |
-|--------|-------------|------|
-| [mcp-github](plugins/mcp-servers/github.json) | GitHub API integration | github, git, issues |
-| [mcp-filesystem](plugins/mcp-servers/filesystem.json) | Secure filesystem access | files, directories |
-| [mcp-postgres](plugins/mcp-servers/postgres.json) | PostgreSQL database integration | database, sql |
-| [mcp-puppeteer](plugins/mcp-servers/puppeteer.json) | Browser automation | browser, screenshots |
-| [mcp-sequential-thinking](plugins/mcp-servers/sequential-thinking.json) | Structured reasoning | thinking, problem-solving |
+### Commands (8)
 
-### Commands
 | Plugin | Description | Usage |
 |--------|-------------|-------|
-| [review-pr](plugins/commands/review-pr.json) | PR code review | `/review-pr <number>` |
-| [create-component](plugins/commands/create-component.json) | Scaffold components | `/create-component <name>` |
-| [git-conventional](plugins/commands/git-conventional.json) | Conventional commits | `/commit` |
-| [explain-codebase](plugins/commands/explain-codebase.json) | Codebase documentation | `/explain` |
-| [linear-find-issues](plugins/commands/linear-find-issues.json) | Find next Linear issues | `/linear:find-next-issues` |
-| [organize-permissions](plugins/commands/organize-permissions.json) | Organize Claude permissions | `/tupa:organize-permissions` |
-| [commit-and-pr](plugins/commands/commit-and-pr.json) | Commit, test, and create PR | `/tupa:commit-and-pr` |
-| [commit-and-push](plugins/commands/commit-and-push.json) | Commit, test, and push | `/tupa:commit-and-push` |
+| `command-review-pr` | PR 코드 리뷰 | `/review-pr <number>` |
+| `command-create-component` | 컴포넌트 스캐폴딩 | `/create-component <name>` |
+| `command-git-conventional` | Conventional commits | `/commit` |
+| `command-explain-codebase` | 코드베이스 문서화 | `/explain` |
+| `command-linear-find-issues` | Linear 이슈 우선순위 분석 | `/linear:find-next-issues` |
+| `command-organize-permissions` | 권한 설정 정리 | `/organize-permissions` |
+| `command-commit-and-pr` | 커밋 → 테스트 → PR 생성 | `/commit-and-pr` |
+| `command-commit-and-push` | 커밋 → 테스트 → 푸시 | `/commit-and-push` |
 
-### Hooks
+### Hooks (4)
+
 | Plugin | Description | Event |
 |--------|-------------|-------|
-| [auto-lint](plugins/hooks/auto-lint.json) | Auto-lint after edits | PostToolUse |
-| [auto-test](plugins/hooks/auto-test.json) | Run related tests | PostToolUse |
-| [notify-slack](plugins/hooks/notify-slack.json) | Slack notifications | Stop |
-| [security-scan](plugins/hooks/security-scan.json) | Block dangerous commands | PreToolUse |
+| `hook-auto-lint` | 파일 수정 후 자동 린트 | PostToolUse |
+| `hook-auto-test` | 코드 변경 후 관련 테스트 실행 | PostToolUse |
+| `hook-notify-slack` | 작업 완료 시 Slack 알림 | Stop |
+| `hook-security-scan` | 위험한 bash 명령어 차단 | PreToolUse |
 
-### Agents
+### Agents (4)
+
 | Plugin | Description | Category |
 |--------|-------------|----------|
-| [backend-architect](plugins/agents/backend-architect.json) | Backend system design | engineering |
-| [frontend-architect](plugins/agents/frontend-architect.json) | Accessible, performant UIs | engineering |
-| [security-engineer](plugins/agents/security-engineer.json) | Security vulnerability analysis | quality |
-| [refactoring-expert](plugins/agents/refactoring-expert.json) | Code quality improvement | quality |
+| `agent-backend-architect` | 백엔드 시스템 설계 | engineering |
+| `agent-frontend-architect` | 접근성, 성능 중심 UI 설계 | engineering |
+| `agent-security-engineer` | 보안 취약점 분석 | quality |
+| `agent-refactoring-expert` | 코드 품질 개선 및 리팩토링 | quality |
+
+## Project Structure
+
+```
+claude-code-marketplace/
+├── .claude-plugin/
+│   └── marketplace.json    # 마켓플레이스 메타데이터
+├── plugins/
+│   ├── commands/           # 슬래시 커맨드
+│   │   ├── commit-and-pr/
+│   │   │   ├── plugin.json
+│   │   │   └── commands/
+│   │   │       └── commit-and-pr.md
+│   │   └── ...
+│   ├── hooks/              # 훅 플러그인
+│   │   ├── auto-lint/
+│   │   │   ├── plugin.json
+│   │   │   └── hooks.json
+│   │   └── ...
+│   └── agents/             # 에이전트 페르소나
+│       ├── backend-architect/
+│       │   ├── plugin.json
+│       │   └── agents/
+│       │       └── backend-architect.md
+│       └── ...
+└── README.md
+```
 
 ## Contributing
 
-### Adding a New Plugin
-
 1. Fork this repository
-2. Create a new JSON file in the appropriate directory:
-   - `plugins/mcp-servers/` for MCP servers
-   - `plugins/commands/` for slash commands
-   - `plugins/hooks/` for hooks
-   - `plugins/agents/` for agent personas
-3. Follow the schema in `schemas/plugin.schema.json`
-4. Submit a pull request
+2. Create plugin directory in appropriate location:
+   - `plugins/commands/` - 슬래시 커맨드
+   - `plugins/hooks/` - 훅 플러그인
+   - `plugins/agents/` - 에이전트 페르소나
+3. Add `plugin.json` with required fields
+4. Submit pull request
 
-### Plugin Schema
+### plugin.json Schema
 
-All plugins must conform to the JSON schema at `schemas/plugin.schema.json`.
-
-Required fields:
-- `name`: Unique plugin identifier (lowercase, hyphens only)
-- `version`: Semantic version (e.g., "1.0.0")
-- `description`: Brief description
-- `type`: One of "mcp-server", "command", "hook", or "agent"
-- `author`: Object with at least `name` field
-
-### Validation
-
-```bash
-# Validate a plugin against the schema
-pnpm run validate plugins/mcp-servers/your-plugin.json
-```
-
-## Registry API
-
-The marketplace provides a JSON registry at `registry.json` for programmatic access:
-
-```bash
-# Fetch all plugins
-curl https://claude-code-marketplace.github.io/registry.json
-
-# Filter by type
-curl https://claude-code-marketplace.github.io/registry.json | jq '.plugins[] | select(.type == "mcp-server")'
+```json
+{
+  "name": "plugin-name",
+  "version": "1.0.0",
+  "description": "Brief description",
+  "author": {
+    "name": "Your Name",
+    "url": "https://github.com/yourname"
+  },
+  "repository": "https://github.com/...",
+  "license": "MIT",
+  "keywords": ["tag1", "tag2"]
+}
 ```
 
 ## License
 
-MIT - See individual plugins for their specific licenses.
+MIT

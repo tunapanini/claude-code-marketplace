@@ -1,0 +1,11 @@
+{
+  "name": "command-review-pr",
+  "version": "1.0.0",
+  "description": "Comprehensive pull request review with code quality checks and suggestions",
+  "author": {
+    "name": "Claude Code Community"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["code-review", "pull-request", "github", "quality"]
+}

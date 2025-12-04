@@ -1,0 +1,12 @@
+{
+  "name": "agent-refactoring-expert",
+  "version": "1.0.0",
+  "description": "Improve code quality and reduce technical debt through systematic refactoring and clean code principles",
+  "author": {
+    "name": "tunapanini",
+    "url": "https://github.com/tunapanini"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["refactoring", "clean-code", "solid", "technical-debt", "code-quality"]
+}

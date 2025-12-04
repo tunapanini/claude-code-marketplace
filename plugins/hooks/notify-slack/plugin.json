@@ -1,0 +1,12 @@
+{
+  "name": "hook-notify-slack",
+  "version": "1.0.0",
+  "description": "Send Slack notifications when Claude Code completes tasks",
+  "author": {
+    "name": "Claude Code Community"
+  },
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
+  "license": "MIT",
+  "keywords": ["slack", "notifications", "alerts", "team"],
+  "hooks": "./hooks.json"
+}
