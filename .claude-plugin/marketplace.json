@@ -11,31 +11,15 @@
   },
   "plugins": [
     {
-      "name": "command-review-pr",
-      "source": "./plugins/review-pr",
-      "description": "Comprehensive pull request code review",
+      "name": "tupa-frontend",
+      "source": "./plugins/frontend",
+      "description": "Frontend development tools: component scaffolding",
       "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["code-review", "pull-request", "github"]
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
+      "keywords": ["react", "vue", "svelte", "component", "scaffold", "frontend"]
     },
     {
-      "name": "command-create-component",
-      "source": "./plugins/create-component",
-      "description": "Scaffold React/Vue/Svelte components with tests",
-      "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["react", "vue", "component", "scaffold"]
-    },
-    {
-      "name": "command-git-conventional",
-      "source": "./plugins/git-conventional",
-      "description": "Generate conventional commit messages",
-      "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["git", "commit", "conventional-commits"]
-    },
-    {
-      "name": "command-claude-tools",
+      "name": "tupa-claude-tools",
       "source": "./plugins/claude-tools",
       "description": "Claude Code utilities: codebase analysis and settings management",
       "version": "1.0.0",
@@ -43,52 +27,36 @@
       "keywords": ["documentation", "architecture", "permissions", "settings", "claude-code"]
     },
     {
-      "name": "command-linear-find-issues",
-      "source": "./plugins/linear-find-issues",
-      "description": "Find and prioritize next Linear issues",
-      "version": "1.0.0",
-      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["linear", "project-management", "issues"]
-    },
-    {
-      "name": "command-git-flow",
+      "name": "tupa-git-flow",
       "source": "./plugins/git-flow",
-      "description": "Git workflow automation: commit, test, push, and PR",
+      "description": "Git workflow automation: conventional commits, push, and PR",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["git", "github", "workflow", "automation", "pull-request"]
+      "keywords": ["git", "github", "workflow", "automation", "pull-request", "conventional-commits"]
     },
     {
-      "name": "hook-auto-quality",
+      "name": "tupa-auto-quality",
       "source": "./plugins/auto-quality",
       "description": "Auto-lint and run tests after file edits",
       "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["linting", "testing", "eslint", "jest", "vitest", "auto-fix", "quality"]
     },
     {
-      "name": "hook-notify-slack",
-      "source": "./plugins/notify-slack",
-      "description": "Send Slack notifications on task completion",
-      "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["slack", "notifications", "alerts"]
-    },
-    {
-      "name": "hook-security-scan",
-      "source": "./plugins/security-scan",
-      "description": "Block potentially dangerous bash commands",
-      "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["security", "safety", "guard"]
-    },
-    {
-      "name": "agent-makers",
+      "name": "tupa-makers",
       "source": "./plugins/makers",
       "description": "Specialized AI agents for frontend, backend, security, and refactoring",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["frontend", "backend", "security", "refactoring", "architecture", "agents"]
+    },
+    {
+      "name": "tupa-etc",
+      "source": "./plugins/tupa-etc",
+      "description": "Utilities: PR review, Linear integration, Slack notifications, security scan",
+      "version": "1.0.0",
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
+      "keywords": ["linear", "slack", "security", "code-review", "pull-request", "notifications"]
     }
   ]
 }
