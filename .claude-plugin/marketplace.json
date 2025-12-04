@@ -35,12 +35,12 @@
       "keywords": ["git", "commit", "conventional-commits"]
     },
     {
-      "name": "command-explain-codebase",
-      "source": "./plugins/explain-codebase",
-      "description": "Generate codebase documentation and architecture overview",
+      "name": "command-claude-tools",
+      "source": "./plugins/claude-tools",
+      "description": "Claude Code utilities: codebase analysis and settings management",
       "version": "1.0.0",
-      "author": { "name": "Claude Code Community" },
-      "keywords": ["documentation", "architecture", "onboarding"]
+      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
+      "keywords": ["documentation", "architecture", "permissions", "settings", "claude-code"]
     },
     {
       "name": "command-linear-find-issues",
@@ -49,14 +49,6 @@
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
       "keywords": ["linear", "project-management", "issues"]
-    },
-    {
-      "name": "command-organize-permissions",
-      "source": "./plugins/organize-permissions",
-      "description": "Analyze and organize Claude Code permissions",
-      "version": "1.0.0",
-      "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
-      "keywords": ["permissions", "settings", "security"]
     },
     {
       "name": "command-git-flow",
