@@ -8,11 +8,11 @@
     "name": "tunapanini",
     "github": "tunapanini"
   },
-  "repository": "https://github.com/tunapanini/dotfiles",
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
   "license": "MIT",
   "tags": ["frontend", "accessibility", "performance", "react", "vue", "ui", "wcag"],
   "install": {
-    "command": "curl -o ~/agents/frontend-architect.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/agents/frontend-architect.md"
+    "command": "curl -o ~/agents/frontend-architect.md https://raw.githubusercontent.com/tunapanini/claude-code-marketplace/main/sources/agents/frontend-architect.md"
   },
   "agent": {
     "category": "engineering",

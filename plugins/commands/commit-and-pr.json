@@ -8,11 +8,11 @@
     "name": "tunapanini",
     "github": "tunapanini"
   },
-  "repository": "https://github.com/tunapanini/dotfiles",
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
   "license": "MIT",
   "tags": ["git", "github", "workflow", "automation", "pull-request", "ci"],
   "install": {
-    "command": "mkdir -p ~/.claude/commands/tupa && curl -o ~/.claude/commands/tupa/commit-and-pr.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/.claude/commands/tupa/commit-and-pr.md"
+    "command": "mkdir -p ~/.claude/commands/tupa && curl -o ~/.claude/commands/tupa/commit-and-pr.md https://raw.githubusercontent.com/tunapanini/claude-code-marketplace/main/sources/commands/tupa/commit-and-pr.md"
   },
   "command": {
     "name": "tupa:commit-and-pr",

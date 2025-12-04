@@ -8,11 +8,11 @@
     "name": "tunapanini",
     "github": "tunapanini"
   },
-  "repository": "https://github.com/tunapanini/dotfiles",
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
   "license": "MIT",
   "tags": ["backend", "api", "database", "security", "architecture", "reliability"],
   "install": {
-    "command": "curl -o ~/agents/backend-architect.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/agents/backend-architect.md"
+    "command": "curl -o ~/agents/backend-architect.md https://raw.githubusercontent.com/tunapanini/claude-code-marketplace/main/sources/agents/backend-architect.md"
   },
   "agent": {
     "category": "engineering",

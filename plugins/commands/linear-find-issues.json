@@ -8,11 +8,11 @@
     "name": "tunapanini",
     "github": "tunapanini"
   },
-  "repository": "https://github.com/tunapanini/dotfiles",
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
   "license": "MIT",
   "tags": ["linear", "project-management", "issues", "prioritization", "workflow"],
   "install": {
-    "command": "mkdir -p ~/.claude/commands/linear && curl -o ~/.claude/commands/linear/find-next-issues.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/.claude/commands/linear/find-next-issues.md"
+    "command": "mkdir -p ~/.claude/commands/linear && curl -o ~/.claude/commands/linear/find-next-issues.md https://raw.githubusercontent.com/tunapanini/claude-code-marketplace/main/sources/commands/linear/find-next-issues.md"
   },
   "command": {
     "name": "linear:find-next-issues",

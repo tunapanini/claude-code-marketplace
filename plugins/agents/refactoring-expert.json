@@ -8,11 +8,11 @@
     "name": "tunapanini",
     "github": "tunapanini"
   },
-  "repository": "https://github.com/tunapanini/dotfiles",
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
   "license": "MIT",
   "tags": ["refactoring", "clean-code", "solid", "technical-debt", "code-quality"],
   "install": {
-    "command": "curl -o ~/agents/refactoring-expert.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/agents/refactoring-expert.md"
+    "command": "curl -o ~/agents/refactoring-expert.md https://raw.githubusercontent.com/tunapanini/claude-code-marketplace/main/sources/agents/refactoring-expert.md"
   },
   "agent": {
     "category": "quality",

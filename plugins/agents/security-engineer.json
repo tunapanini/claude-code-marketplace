@@ -8,11 +8,11 @@
     "name": "tunapanini",
     "github": "tunapanini"
   },
-  "repository": "https://github.com/tunapanini/dotfiles",
+  "repository": "https://github.com/tunapanini/claude-code-marketplace",
   "license": "MIT",
   "tags": ["security", "owasp", "vulnerability", "audit", "compliance", "threat-modeling"],
   "install": {
-    "command": "curl -o ~/agents/security-engineer.md https://raw.githubusercontent.com/tunapanini/dotfiles/main/claude/agents/security-engineer.md"
+    "command": "curl -o ~/agents/security-engineer.md https://raw.githubusercontent.com/tunapanini/claude-code-marketplace/main/sources/agents/security-engineer.md"
   },
   "agent": {
     "category": "quality",
