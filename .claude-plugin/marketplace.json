@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "command-review-pr",
-      "source": "./commands/review-pr",
+      "source": "./plugins/commands/review-pr",
       "description": "Comprehensive pull request code review",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -20,7 +20,7 @@
     },
     {
       "name": "command-create-component",
-      "source": "./commands/create-component",
+      "source": "./plugins/commands/create-component",
       "description": "Scaffold React/Vue/Svelte components with tests",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -28,7 +28,7 @@
     },
     {
       "name": "command-git-conventional",
-      "source": "./commands/git-conventional",
+      "source": "./plugins/commands/git-conventional",
       "description": "Generate conventional commit messages",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -36,7 +36,7 @@
     },
     {
       "name": "command-explain-codebase",
-      "source": "./commands/explain-codebase",
+      "source": "./plugins/commands/explain-codebase",
       "description": "Generate codebase documentation and architecture overview",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -44,7 +44,7 @@
     },
     {
       "name": "command-linear-find-issues",
-      "source": "./commands/linear-find-issues",
+      "source": "./plugins/commands/linear-find-issues",
       "description": "Find and prioritize next Linear issues",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -52,7 +52,7 @@
     },
     {
       "name": "command-organize-permissions",
-      "source": "./commands/organize-permissions",
+      "source": "./plugins/commands/organize-permissions",
       "description": "Analyze and organize Claude Code permissions",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -60,7 +60,7 @@
     },
     {
       "name": "command-commit-and-pr",
-      "source": "./commands/commit-and-pr",
+      "source": "./plugins/commands/commit-and-pr",
       "description": "Automated workflow: commit, test, and create PR",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -68,7 +68,7 @@
     },
     {
       "name": "command-commit-and-push",
-      "source": "./commands/commit-and-push",
+      "source": "./plugins/commands/commit-and-push",
       "description": "Automated workflow: commit, test, and push",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -76,7 +76,7 @@
     },
     {
       "name": "hook-auto-lint",
-      "source": "./hooks/auto-lint",
+      "source": "./plugins/hooks/auto-lint",
       "description": "Auto-lint after file edits",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -84,7 +84,7 @@
     },
     {
       "name": "hook-auto-test",
-      "source": "./hooks/auto-test",
+      "source": "./plugins/hooks/auto-test",
       "description": "Run related tests after code changes",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -92,7 +92,7 @@
     },
     {
       "name": "hook-notify-slack",
-      "source": "./hooks/notify-slack",
+      "source": "./plugins/hooks/notify-slack",
       "description": "Send Slack notifications on task completion",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -100,7 +100,7 @@
     },
     {
       "name": "hook-security-scan",
-      "source": "./hooks/security-scan",
+      "source": "./plugins/hooks/security-scan",
       "description": "Block potentially dangerous bash commands",
       "version": "1.0.0",
       "author": { "name": "Claude Code Community" },
@@ -108,7 +108,7 @@
     },
     {
       "name": "agent-backend-architect",
-      "source": "./agents/backend-architect",
+      "source": "./plugins/agents/backend-architect",
       "description": "Design reliable backend systems with data integrity focus",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -116,7 +116,7 @@
     },
     {
       "name": "agent-frontend-architect",
-      "source": "./agents/frontend-architect",
+      "source": "./plugins/agents/frontend-architect",
       "description": "Create accessible, performant user interfaces",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -124,7 +124,7 @@
     },
     {
       "name": "agent-security-engineer",
-      "source": "./agents/security-engineer",
+      "source": "./plugins/agents/security-engineer",
       "description": "Identify security vulnerabilities and ensure compliance",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
@@ -132,7 +132,7 @@
     },
     {
       "name": "agent-refactoring-expert",
-      "source": "./agents/refactoring-expert",
+      "source": "./plugins/agents/refactoring-expert",
       "description": "Improve code quality through systematic refactoring",
       "version": "1.0.0",
       "author": { "name": "tunapanini", "url": "https://github.com/tunapanini" },
