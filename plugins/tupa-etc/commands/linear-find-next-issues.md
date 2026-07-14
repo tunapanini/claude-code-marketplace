@@ -45,8 +45,8 @@ Linear에서 현재 프로젝트의 다음 진행할 이슈를 우선순위별�
 
 ```bash
 /linear:find-next-issues
-/linear:find-next-issues one-move
-/linear:find-next-issues moo3
+/linear:find-next-issues sample-project
+/linear:find-next-issues demo-project
 ```
 
 ## Integration

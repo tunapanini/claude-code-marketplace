@@ -1,0 +1,4 @@
+interface:
+  display_name: "검증된 압축 파일 생성"
+  short_description: "ZIP·tar.gz 자동 선택 및 원본 무결성 검증"
+  default_prompt: "Use $create-verified-encrypted-zip to choose a suitable archive format, create the archive, extract it, and verify it against the source."
