@@ -62,7 +62,7 @@
 - Bash(./*.sh:*) - 스크립트 실행
 
 🚫 Deny로 이동 추천:
-- Read(//Users/tunapanini/**) - 너무 광범위한 접근
+- Read(/Users/example/**) - 너무 광범위한 접근
 
 💡 이미 글로벌에 존재:
 - Read(~/.claude/**)
